@@ -7,7 +7,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 
-public class TC006 {
+public class TC007 {
         public static void main(String[] args) throws InterruptedException {
 
             WebDriverManager.chromedriver().setup();
@@ -99,7 +99,7 @@ public class TC006 {
             WebElement pronoun= driver.findElement(By.name("preferred_pronoun"));
             Select proN=new Select(pronoun);
             pronoun.sendKeys("She: \"Wish her a happy birthday");
-            
+
             //5. click sighn up button
             //<button type="submit" class="_6j mvm _6wk _6wl _58mi _6o _6v" name="websubmit" id="u_1l_s_3u">Sign Up</button>
             Thread.sleep(3000);
