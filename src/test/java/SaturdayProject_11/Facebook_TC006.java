@@ -7,7 +7,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 
-public class TC006 {
+public class Facebook_TC006 {
         public static void main(String[] args) throws InterruptedException {
 
             WebDriverManager.chromedriver().setup();
@@ -104,7 +104,7 @@ public class TC006 {
             //<button type="submit" class="_6j mvm _6wk _6wl _58mi _6o _6v" name="websubmit" id="u_1l_s_3u">Sign Up</button>
             Thread.sleep(3000);
             WebElement signUpButton= driver.findElement(By.name("websubmit"));
-            signUpButton.click();
+            System.out.println(signUpButton.getText());
         }
     }
 
